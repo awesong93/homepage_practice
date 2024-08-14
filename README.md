@@ -1,4 +1,4 @@
 # homepage_practice
 JQuery Final Project
 
-homepage_main.PNG
+![Main Image](homepage_main.PNG)
