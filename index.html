@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홈페이지만들기연습_스타벅스</title>
+
+  <link href="css/Index.css" type="text/css" rel="stylesheet">
+
+
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/Index.js" defer type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="headerwrap">
+      <div class="logo">
+        <a href="Index.html"><img src="image/sblogo5.png" alt="로고"></a>
+      </div>
+      <div id="menu_bg"></div>
+      <nav class="menu">
+        <ul class="navi">
+          <li><a href="CoffeeMenu.html">COFFEE</a>
+            <ul class="submenu">
+              <li><a href="CoffeeMenu.html">NEW</a></li>
+              <li><a href="Esproesso.html">ESPRESSO</a></li>
+              <li><a href="ColdBrew.html">COLD BREW</a></li>
+              <li><a href="#">BLONDE</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">MENU</a>
+            <ul class="submenu">
+              <li><a href="#">CAKE</a></li>
+              <li><a href="#">SANDWICH</a></li>
+              <li><a href="#">SALAD</a></li>
+              <li><a href="#">BREAD</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">STORE</a>
+            <ul class="submenu">
+              <li><a href="#">MUG</a></li>
+              <li><a href="#">GLASS</a></li>
+              <li><a href="#">TUMBLER</a></li>
+              <li><a href="#">ACC</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">REWARDS</a>
+            <ul class="submenu">
+              <li><a href="#">LEVEL</a></li>
+              <li><a href="#">STAR</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">CARD</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">WHAT'S NEW</a>
+            <ul class="submenu">
+              <li><a href="#">EVENT</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">NEW PRODUCT</a></li>
+              <li><a href="#">NOTICE</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="imagslide">
+    <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+      css-mode="true">
+      <swiper-slide><a href="#">
+          <img src="image/slide1.jpg" alt="슬라이드1">
+        </a></swiper-slide>
+      <swiper-slide><a href="#">
+          <img src="image/slide2.jpg" alt="슬라이드1">
+        </a></swiper-slide>
+      <swiper-slide><a href="#">
+          <img src="image/slide3.jpg" alt="슬라이드1">
+        </a></swiper-slide>
+      <swiper-slide><a href="#">
+          <img src="image/slide4.jpg" alt="슬라이드1">
+        </a></swiper-slide>
+    </swiper-container>
+  </div>
+
+  <div class="center">
+    <div class="contents">
+      <div class="notice">
+        <div class="tab">
+          <h4>공지사항</h4>
+        </div>
+        <ul>
+          <li><a href="#">’리저널 컬렉션’ 경기 머그와 텀블러, 엽서북 출시 연기 및 판매일 안내
+              <span>2024-07-31</span>
+            </a></li>
+          <li><a href="#">시스템 개선 및 서비스 점검 안내
+              <span>2024-07-31</span>
+            </a></li>
+          <li><a href="#">스타벅스 카드 이용약관 일부 정정 안내
+              <span>2024-07-31</span>
+            </a></li>
+          <li><a href="#">스타벅스 사칭(홈페이지, 문자, 이메일, 카카오톡 채팅 등) 채용 주의 안내
+              <span>2024-07-31</span>
+            </a></li>
+          <li><a href="#">일부 품목 가격 조정 안내
+              <span>2024-07-31</span>
+            </a></li>
+          <li><a href="#">스타벅스 리워드 회원 에코별 혜택 조정 안내
+              <span>2024-07-31</span>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contents2">
+    <div class="shortcut">
+      <a href="#">
+        <img src="image/logo_white2.png" alt="바로가기">
+      </a>
+      <div class="sctext">
+        <h2>스타벅스만의 특별한 혜택, 스타벅스 리워드</h2>
+        <p>스타벅스 회원이세요? 로그인을 통해 나만의 리워드를 확인해보세요.</p>
+        <p>스타벅스 회원이 아니세요? 가입을 통해 리워드 혜택을 즐기세요.</p>
+
+        <button type="button" id="signupBtn" class="btn">회원가입</button>
+        <button type="button" class="btn">로그인</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="contents3">
+    <div class="shortcut2">
+      <a href="#">
+        <img src="image/4.jpg" alt="홍보">
+      </a>
+      <div class="sctext2">
+        <h2>PICK YOUR FAVORITE</h2>
+        <p>다양한 메뉴를 스타벅스에서 즐겨보세요.</p>
+        <p>스타벅스만의 특별함을 경험할 수 있는 최상의 선택 <span>음료</span></p>
+        <p>스타벅스 커피와 완벽한 어울림을 자랑하는 <span>푸드</span></p>
+
+        <button type="button">자세히보기</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="contents4">
+    <div class="shortcut3">
+      <a href="#">
+        <img src="image/2.jpg" alt="홍보">
+      </a>
+      <div class="sctext3">
+        <h2>Experience the best of Starbucks</h2>
+
+        <button type="button"><a href="https://www.starbucks.co.kr/store/store_map.do" target="_blank">매장 찾아보기</a></button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap2">
+      <div class="footermenu">
+        <ul>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">홈페이지 이용약관</a></li>
+          <li><a href="#">위치정보 이용약관</a></li>
+          <li><a href="#">스타벅스 카드 이용약관</a></li>
+          <li><a href="#">비회원 이용약관</a></li>
+          <li><a href="#">윤리경영 핫라인</a></li>
+        </ul>
+      </div>
+      <div class="site">
+        <button type="button" class="bottom-row">찾아오시는 길</button>
+        <button type="button" class="bottom-row">신규입점제의</button>
+        <div class="familysite">
+          <select name="sitelist">
+            <option value="#">FAMILY SITE1</option>
+            <option value="#">FAMILY SITE2</option>
+            <option value="#">FAMILY SITE3</option>
+          </select>
+        </div>
+      </div>
+      <div class="footertext">
+        <p>사업자등록번호 : 201-81-21515 | 주식회사 에스씨케이컴퍼니 대표이사 : 손정현 | TEL : 1522-3232 | 개인정보 보호책임자 : 이찬우</p>
+      </div>
+      <div class="copy">
+        COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
