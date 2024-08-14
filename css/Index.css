@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+/* 메뉴 폰트 */
+@font-face {
+	font-family: 'Cafe24ClassicType-Regular';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*서브메뉴폰트*/
+@font-face {
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*기타 폰트*/
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+html,
+body {
+	width: 1920px;
+	background-color: #fff;
+}
+
+a {
+	display: block;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	z-index: 10;
+	position: relative;
+}
+
+.headerwrap {
+	width: 1920px;
+}
+
+.logo {
+	float: left;
+	width: 200px;
+	height: 100px;
+	margin-left: 70px;
+}
+
+.logo img {
+	float: left;
+	width: 200px;
+	margin-top: 53px;
+	margin-left: 150px;
+}
+
+#menu_bg {
+	width: 1200px;
+	height: 160px;
+	position: absolute;
+	display: none;
+	z-index: 10;
+	top: 100px;
+	left: 300px;
+}
+
+.menu {
+	float: left;
+	width: 1200px;
+	height: 100px;
+	z-index: 10;
+	margin-left: 70px;
+}
+
+.navi {
+	float: right;
+	margin-top: 50px;
+	margin-right: 0px;
+}
+
+.navi>li {
+	float: left;
+}
+
+.navi>li>a {
+	color: #036635;
+	text-decoration: none;
+}
+
+.navi>li {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Cafe24ClassicType-Regular';
+	font-weight: bold;
+	color: #036635;
+}
+
+.navi>li>a:hover {
+	background-color: #036635;
+	color: #fff;
+	text-shadow: 1px 1px 1px #222;
+}
+
+.submenu {
+	width: 200px;
+	height: 160px;
+	position: absolute;
+	display: none;
+	z-index: 11;
+	background-color: #036635;
+}
+
+.submenu>li>a {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fff;
+	color: #222;
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	text-decoration: none;
+}
+
+.submenu>li>a:hover {
+	background-color: #036635;
+	color: #fff;
+	text-shadow: 1px 1px 1px #222;
+}
+
+swiper-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+swiper-slide {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.contents {
+	width: 1200px;
+	height: 300px;
+	margin: 0;
+}
+
+.notice {
+	width: 1200px;
+	height: 300px;
+}
+
+.tab {
+	width: 1200px;
+	margin: 0;
+}
+
+.notice h4 {
+	height: 80px;
+	line-height: 80px;
+	font-family: 'Pretendard-Regular';
+	color: #036635;
+	font-size: 20px;
+}
+
+.notice>div {
+	width: 1000px;
+	border-bottom: 3px solid #036635;
+	margin-left: 500px;
+}
+
+.notice ul {
+	width: 1800px;
+}
+
+.notice li {
+	height: 32px;
+	line-height: 32px;
+	font-size: 15px;
+	font-family: 'Pretendard-Regular';
+	margin-left: 500px;
+}
+
+.notice li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.notice li span {
+	float: right;
+	margin-right: 300px;
+	color: #000;
+}
+
+.notice li:hover {
+	color: #036635;
+	font-weight: bold;
+}
+
+.contents2 {
+	width: 1920px;
+	height: 300px;
+	background-color: #036635;
+	position: relative;
+}
+
+.shortcut img {
+	width: 300px;
+	height: 300px;
+	margin-left: 550px;
+	margin-top: 5px;
+}
+
+.sctext {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 500px;
+	height: auto;
+	color: #fff;
+	font-family: 'Pretendard-Regular';
+	line-height: 2.5em;
+}
+
+.sctext button {
+	margin-top: 15px;
+	margin-right: 15px;
+	width: 200px;
+	height: 50px;
+	background-color: #002714;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 15px;
+	font-family: 'Pretendard-Regular';
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #002714;
+	font-weight: bold;
+}
+
+.contents3 {
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.shortcut2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.shortcut2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.sctext2 {
+	position: absolute;
+	top: 15%;
+	left: 53%;
+	width: 500px;
+	color: #fff;
+	z-index: 10;
+	text-align: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.sctext2 h2 {
+	margin: 0 0 15px 0;
+	font-size: 55px;
+	font-family: 'Cafe24ClassicType-Regular';
+	color: #a57c00;
+}
+
+.sctext2 p {
+	margin: 15px 0;
+	font-size: 18px;
+	font-family: 'Pretendard-Regular';
+	color: #dfc76c;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.sctext2 span {
+	font-weight: bolder;
+	font-family: 'Pretendard-Regular';
+	color: #a57c00;
+}
+
+.sctext2 button {
+	width: 180px;
+	height: 50px;
+	font-size: 17px;
+	font-weight: bolder;
+	background-color: transparent;
+	font-family: 'Pretendard-Regular';
+	color: #fff;
+	border: 3px solid #fff;
+	padding: 10px 20px;
+	margin-top: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.sctext2 button:hover {
+	background-color: #fff;
+	color: #a57c00;
+	font-weight: bolder;
+}
+
+.contents4 {
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.shortcut3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.shortcut3 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.sctext3 {
+	position: absolute;
+	top: 19%;
+	left: 30%;
+	width: 500px;
+	color: #fff;
+	z-index: 10;
+	text-align: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.sctext3 h2 {
+	margin: 0 0 15px 0;
+	font-size: 55px;
+	font-family: 'Cafe24ClassicType-Regular';
+	color: #ffc400;
+	text-shadow: 2px 1px 1px #fef580
+}
+
+.sctext3 button {
+	width: 180px;
+	height: 50px;
+	font-size: 17px;
+	font-weight: bolder;
+	background-color: transparent;
+	font-family: 'Pretendard-Regular';
+	color: #fff;
+	border: 3px solid #fff;
+	padding: 10px 20px;
+	margin-top: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.sctext3 button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.sctext3 button:hover {
+	background-color: #036635;
+	color: #fff;
+	border: none;
+	font-weight: bolder; 
+}
+
+footer {
+	background-color: #002714;
+	color: #fff;
+	padding: 20px 0;
+	font-family: 'Pretendard-Regular';
+}
+.wrap2 {
+	width: 1920px;
+	height: 250px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footermenu {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.footermenu ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+.footermenu li {
+	margin: 0 15px;
+}
+.footermenu a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.footermenu a:hover {
+	text-decoration: underline;
+}
+.bottom-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.site {
+	display: flex;
+	gap: 20px;
+}
+.site button {
+	background-color: #fff;
+	color: #002714;
+	width: 200px;
+	height: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	border: none;
+	font-weight: bolder;
+	font-family: 'Pretendard-Regular';
+}
+.site button:hover {
+	background-color: #036635;
+	color: #fff;
+}
+.familysite {
+	display: flex;
+	align-items: center;
+}
+.familysite select {
+	width: 200px;
+	height: 40px;
+	background-color: #fff;
+	color: #002714;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Pretendard-Regular';
+	text-align: center;
+}
+.footertext {
+	margin-top: 40px;
+	font-size: 12px;
+}
+.copy {
+	margin-top: 10px;
+	font-size: 12px;
+}
+

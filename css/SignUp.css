@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/* 메뉴 폰트 */
+@font-face {
+	font-family: 'Cafe24ClassicType-Regular';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*서브메뉴폰트*/
+@font-face {
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*기타 폰트*/
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+html,
+body {
+	width: 1920px;
+	background-color: #fff;
+}
+
+a {
+	display: block;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	z-index: 10;
+	position: relative;
+}
+
+.headerwrap {
+	width: 1920px;
+}
+
+.logo {
+	float: left;
+	width: 200px;
+	height: 100px;
+	margin-left: 70px;
+}
+
+.logo img {
+	float: left;
+	width: 200px;
+	margin-top: 53px;
+	margin-left: 150px;
+}
+
+#menu_bg {
+	width: 1200px;
+	height: 160px;
+	position: absolute;
+	display: none;
+	z-index: 10;
+	top: 100px;
+	left: 300px;
+}
+
+.menu {
+	float: left;
+	width: 1200px;
+	height: 100px;
+	z-index: 10;
+	margin-left: 70px;
+}
+
+.navi {
+	float: right;
+	margin-top: 50px;
+	margin-right: 0px;
+}
+
+.navi>li {
+	float: left;
+}
+
+.navi>li>a {
+	color: #036635;
+	text-decoration: none;
+}
+
+.navi>li {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Cafe24ClassicType-Regular';
+	font-weight: bold;
+	color: #036635;
+}
+
+.navi>li>a:hover {
+	background-color: #036635;
+	color: #fff;
+	text-shadow: 1px 1px 1px #222;
+}
+
+.submenu {
+	width: 200px;
+	height: 160px;
+	position: absolute;
+	display: none;
+	z-index: 11;
+	background-color: #036635;
+}
+
+.submenu>li>a {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fff;
+	color: #222;
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	text-decoration: none;
+}
+
+.submenu>li>a:hover {
+	background-color: #036635;
+	color: #fff;
+	text-shadow: 1px 1px 1px #222;
+}
+
+footer {
+	background-color: #002714;
+	color: #fff;
+	padding: 20px 0;
+	font-family: 'Pretendard-Regular';
+}
+.wrap2 {
+	width: 1920px;
+	height: 250px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footermenu {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.footermenu ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+.footermenu li {
+	margin: 0 15px;
+}
+.footermenu a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.footermenu a:hover {
+	text-decoration: underline;
+}
+.bottom-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.site {
+	display: flex;
+	gap: 20px;
+}
+.site button {
+	background-color: #fff;
+	color: #002714;
+	width: 200px;
+	height: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	border: none;
+	font-weight: bolder;
+	font-family: 'Pretendard-Regular';
+}
+.site button:hover {
+	background-color: #036635;
+	color: #fff;
+}
+.familysite {
+	display: flex;
+	align-items: center;
+}
+.familysite select {
+	width: 200px;
+	height: 40px;
+	background-color: #fff;
+	color: #002714;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Pretendard-Regular';
+	text-align: center;
+}
+.footertext {
+	margin-top: 40px;
+	font-size: 12px;
+}
+.copy {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+/* --------- 여기까지 바꾸면 안되는  css */
+
+.container {
+	background-color: #fff;
+	padding: 50px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 700px;
+	height: 700px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	line-height: 3em;
+}
+h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	font-size: 40px;
+	text-align: center;
+}
+.form-group {
+	margin-bottom: 20px;
+	font-family: 'Pretendard-Regular';
+	font-size: 18px;
+}
+.form-group label {
+	display: block;
+	margin-bottom: 10px;
+}
+.form-group input {
+	width: 100%;
+	height: 50px;
+	padding: 8px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.form-group input[type="submit"] {
+	background-color: #036635;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 25px;
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	height: 60px;
+	margin-top: 50px;
+}
+.form-group input[type="submit"]:hover {
+	background-color: #002714;
+}
+.error-message {
+	color: red;
+	font-size: 0.875em;
+	margin-top: 5px;
+}
